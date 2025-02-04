@@ -98,12 +98,9 @@ Response
 
 
 Errors
-```
-404 Spot not found – The spot ID does not exist.
-```
-```
-400 Spot already reserved – The spot is taken.
-```
+```404 Spot not found – The spot ID does not exist.```
+
+```400 Spot already reserved – The spot is taken.```
 
 
 4. Release a Parking Spot
