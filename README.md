@@ -15,16 +15,20 @@ cd parkpilot-api
 pip install fastapi uvicorn pydantic
 
 3. Start the API server
+```
 uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 API Endpoints
 
 1. Retrieve All Parking Spots
-Returns a list of all parking spots with their status.
+2. Returns a list of all parking spots with their status.
 
 GET /v1/parking/spots
 
 Response
+
+```
 
 [
   {
@@ -42,6 +46,23 @@ Response
     "reservation_time": "2024-02-03T12:30:00Z"
   }
 ]
+```
 
 2. Retrieve a Specific Parking Spot
 Gets details for a specific spot.
+
+```
+GET /v1/parking/spots/{spot_id}
+```
+
+Response
+
+```
+{
+  "id": 2,
+  "location": "Spot-2",
+  "status": "reserved",
+  "reserved_by": "user123",
+  "reservation_time": "2024-02-03T12:30:00Z"
+}
+```
