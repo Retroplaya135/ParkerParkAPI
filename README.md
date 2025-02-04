@@ -21,3 +21,5 @@ API Endpoints
 
 1. Retrieve All Parking Spots
 Returns a list of all parking spots with their status.
+
+GET /v1/parking/spots
