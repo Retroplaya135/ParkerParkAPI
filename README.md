@@ -106,3 +106,25 @@ Errors
 400 Spot already reserved – The spot is taken.
 ```
 
+
+4. Release a Parking Spot
+Frees up a reserved parking spot.
+
+Request
+POST /v1/parking/release
+
+Payload
+{
+  "spot_id": 3,
+  "user": "user456"
+}
+
+Response
+{
+  "id": 3,
+  "location": "Spot-3",
+  "status": "available",
+  "reserved_by": null,
+  "reservation_time": null
+}
+
