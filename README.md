@@ -24,7 +24,9 @@ API Endpoints
 1. Retrieve All Parking Spots
 2. Returns a list of all parking spots with their status.
 
+```
 GET /v1/parking/spots
+```
 
 Response
 
@@ -65,4 +67,11 @@ Response
   "reserved_by": "user123",
   "reservation_time": "2024-02-03T12:30:00Z"
 }
+```
+
+3. Reserve a Parking Spot
+Marks a parking spot as reserved.
+
+```
+POST /v1/parking/reserve
 ```
