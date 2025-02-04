@@ -141,7 +141,9 @@ Response
 Errors
 
 ``` 404 Spot not found – The spot ID does not exist. ```
+
 ```400 Spot is not reserved – The spot is already available.```
+
 ```403 User not authorized – The user does not own the reservation.```
 
 
