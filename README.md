@@ -75,3 +75,34 @@ Marks a parking spot as reserved.
 ```
 POST /v1/parking/reserve
 ```
+
+Payload
+```
+{
+  "spot_id": 3,
+  "user": "user456"
+}
+```
+
+Response
+```
+
+{
+  "id": 3,
+  "location": "Spot-3",
+  "status": "reserved",
+  "reserved_by": "user456",
+  "reservation_time": "2024-02-03T13:00:00Z"
+}
+```
+
+
+Errors
+```
+404 Spot not found – The spot ID does not exist.
+```
+```
+
+400 Spot already reserved – The spot is taken.
+```
+
