@@ -42,3 +42,6 @@ Response
     "reservation_time": "2024-02-03T12:30:00Z"
   }
 ]
+
+2. Retrieve a Specific Parking Spot
+Gets details for a specific spot.
