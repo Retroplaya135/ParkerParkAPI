@@ -13,3 +13,6 @@ cd parkpilot-api
 2. Install dependencies
 
 pip install fastapi uvicorn pydantic
+
+3. Start the API server
+uvicorn main:app --host 0.0.0.0 --port 8000
