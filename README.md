@@ -16,3 +16,8 @@ pip install fastapi uvicorn pydantic
 
 3. Start the API server
 uvicorn main:app --host 0.0.0.0 --port 8000
+
+API Endpoints
+
+1. Retrieve All Parking Spots
+Returns a list of all parking spots with their status.
