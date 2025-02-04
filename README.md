@@ -148,34 +148,50 @@ Errors
 Provides a summary of total spots, reserved spots, and available spots.
 
 Request
+```
 GET /v1/parking/status
+```
 
 Response
+```
+
 {
   "total": 10,
   "reserved": 2,
   "available": 8
 }
+```
+
 
 6. API Health Check
+   
 Ensures the API is running properly.
 
 Request
+```
 GET /v1/health
+```
+
 
 Response
+```
 {
   "status": "ok",
   "timestamp": "2024-02-03T12:45:00Z"
 }
+```
+
 
 7. API Usage Statistics
 Tracks API usage by IP.
 
 Request
+```
 GET /v1/stats
+```
 
 Response
+```
 {
   "usage": {
     "192.168.1.10": 5,
@@ -183,5 +199,6 @@ Response
   },
   "timestamp": "2024-02-03T12:50:00Z"
 }
+```
 
 
