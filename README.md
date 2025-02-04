@@ -8,3 +8,8 @@ ParkPilot API provides a structured way to manage parking spots in a facility. I
 ```bash
 git clone https://github.com/Retroplaya135/ParkerParkAPI/
 cd parkpilot-api
+```
+
+2. Install dependencies
+
+pip install fastapi uvicorn pydantic
