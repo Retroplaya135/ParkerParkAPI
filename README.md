@@ -264,3 +264,19 @@ Reservation & Release System
 Users can reserve a parking spot and release it when done.
 Only the reserving user can release their spot.
 
+
+## Reset API Usage Logs
+
+Clear all logged API usage.
+
+Request:
+```
+POST /v1/admin/reset_usage
+```
+Response:
+```
+{
+  "status": "usage log reset",
+  "timestamp": "2024-02-04T13:05:00Z"
+}
+```
