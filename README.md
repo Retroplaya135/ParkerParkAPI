@@ -201,4 +201,41 @@ Response
 }
 ```
 
+### Admin Endpoints
+
+1. Reset All Parking Spots
+   
+Resets all parking spots to their default state.
+
+Request
+
+```
+POST /v1/admin/reset
+```
+
+Response
+
+```
+{
+  "status": "parking spots reset",
+  "timestamp": "2024-02-03T12:55:00Z"
+}
+```
+
+2. Reset API Usage Logs
+Clears the recorded usage statistics.
+
+Request
+
+```
+POST /v1/admin/reset_usage
+```
+
+Response
+```
+{
+  "status": "usage log reset",
+  "timestamp": "2024-02-03T13:00:00Z"
+}
+```
 
