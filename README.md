@@ -280,3 +280,10 @@ Response:
   "timestamp": "2024-02-04T13:05:00Z"
 }
 ```
+
+#Local Deployment
+
+```
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
