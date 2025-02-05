@@ -305,3 +305,17 @@ Build and Run Docker Container
 docker build -t parkpilot-api .
 docker run -p 8000:8000 parkpilot-api
 ```
+
+Technical Overview
+
+FastAPI Backend
+Built using FastAPI for high-speed request handling. Fully asynchronous to support multiple concurrent API calls.
+Parking Reservation System
+Users can reserve a parking spot. Only the user who reserved the spot can release it.
+Real-Time Parking Status
+View current availability and total reservations. Instant updates when spots are reserved or released.
+Usage Tracking
+API logs requests per client IP. Admins can reset logs when needed.
+Admin Controls
+Reset all parking spots to clear existing reservations. Clear usage logs to reset tracked data.
+
