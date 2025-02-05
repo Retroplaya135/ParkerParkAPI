@@ -2,6 +2,22 @@
 
 ParkPilot API provides a structured way to manage parking spots in a facility. It allows users to check availability, make reservations, and release spots when done. The system tracks usage based on client IP and includes admin tools for maintenance.
 
+ for parking management.
+
+---
+
+## 🚀 Key Features
+
+- **View Parking Availability**: Check available and reserved spots.
+- **Reserve a Parking Spot**: Users can reserve a spot by providing their details.
+- **Release a Parking Spot**: Only the reserving user can release their spot.
+- **Real-Time Status Updates**: Parking spot statuses update instantly.
+- **Usage Tracking**: API usage is logged per client IP.
+- **Admin Functions**: Reset parking spots and clear usage logs.
+- **Health & Stats**: Monitor API health, usage, and version information.
+
+---
+
 ## Installation
 
 ### 1. Clone the repository
@@ -238,4 +254,13 @@ Response
   "timestamp": "2024-02-03T13:00:00Z"
 }
 ```
+
+How It Works
+
+FastAPI Backend
+The API is built using FastAPI for speed and scalability.
+Fully asynchronous to handle multiple requests efficiently.
+Reservation & Release System
+Users can reserve a parking spot and release it when done.
+Only the reserving user can release their spot.
 
