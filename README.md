@@ -299,3 +299,9 @@ RUN pip install -r requirements.txt
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
+Build and Run Docker Container
+
+```
+docker build -t parkpilot-api .
+docker run -p 8000:8000 parkpilot-api
+```
