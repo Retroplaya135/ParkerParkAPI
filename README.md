@@ -319,3 +319,7 @@ API logs requests per client IP. Admins can reset logs when needed.
 Admin Controls
 Reset all parking spots to clear existing reservations. Clear usage logs to reset tracked data.
 
+
+License
+
+This project is licensed under the MIT License. 
