@@ -18,6 +18,31 @@ ParkPilot API provides a structured way to manage parking spots in a facility. I
 
 ---
 
+```
++-------------------------------+
+|       Parker Park API         |
++-------------------------------+
+        |          |          |
+        v          v          v
++----------------+  +----------------+  +----------------+
+|  User API     |  | Admin API      |  | Health & Stats |
+| (Reserve,     |  | (Reset Spots,  |  | (Monitor API)  |
+| Release, View)|  |  Clear Logs)   |  |                |
++----------------+  +----------------+  +----------------+
+        |          |          |
+        v          v          v
++----------------------------------------------------+
+|                FastAPI Backend                    |
+| (Handles requests, validation, & responses)      |
++----------------------------------------------------+
+        |
+        v
++----------------------------------------------------+
+|              SQLite / PostgreSQL Database         |
+| (Tracks reservations, users, and logs)           |
++----------------------------------------------------+
+```
+
 ## Installation
 
 ### 1. Clone the repository
