@@ -279,6 +279,26 @@ Response
   "timestamp": "2024-02-03T13:00:00Z"
 }
 ```
+#API Flow
+
+```
++----------------------+
+|    API Client       |
+|  (Mobile, Web App)  |
++----------------------+
+        |
+        v
++----------------------+
+|   FastAPI Server    |
+|  (Handles Requests) |
++----------------------+
+        |
+        v
++----------------------+
+| Database (Spots,    |
+| Users, Logs)        |
++----------------------+
+```
 
 How It Works
 
